@@ -48,7 +48,7 @@
 - Use ***number*** + ***yy*** to duplicate spesified the numbers line.
 - Use ***u*** to undo it
 - Use ***Ctrl-r*** to redo it
-- Unnamed register = 
+- Unnamed register = ""
 - Numbered registers = 0 1 ... 9
 -  holds text from d, c, s, x, and y operations.
 - 0 holds last text yanked (y).
