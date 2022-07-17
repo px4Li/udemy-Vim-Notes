@@ -1,4 +1,4 @@
-<p style="text-align: center;"> Udemy Tutorial - Vim Masterclass (Jason Cannon)</>
+<p style="text-align: center;"> Udemy Tutorial - Vim Masterclass (Jason Cannon)</p>
 
 ## 1. Vim Essentials
 ### 1.1. Navigation Commands
@@ -38,7 +38,7 @@
 - Use ***number*** + ***d*** + ***d*** to delete how many lines
 - Use ***.*** to repeat the previous command
 
-## Deleting=Cut, Yanking=Copy & Putting=Paste
+## 2. Deleting=Cut, Yanking=Copy & Putting=Paste
 - ***d*** and ***x*** cut text, not just delete it.
 - cut = delete and save into a register.
 - Register is a clipboard-like storage locattion.
@@ -59,3 +59,28 @@
 - Use 26 named registers from a to z (Captial A to B will append to a to b), like ***"a*** to specify a register, then copy it by useing ***yy***
 - Use the register, you can use ***"a*** + ***p*** to paste the line you registered or in multiple case ***number*** + ***p***
 - Use ***:reg*** space ***a*** to look at a specific register or in multiple case add mutiple named and numbered registers
+
+## 3. Transforming and Substituting Text
+### 3.1. Inserting, Changing, Replacing, and Jointing
+- Use ***shift-i*** to jump to the first non blank character in the line and switch to insert mode.
+- Use ***i*** to switch to insert mode but the cursor will not jump.
+- Use ***a*** to append text after the current cursor position. 
+- Use ***shift-a*** to jump to end of the line and place you in insert mode.
+- Use ***o*** to begin a new line below the cursor and place you in insert mode.
+- Use ***shift-o*** to create a line above the current line and start inserting mode
+- Use ***number*** + ***i*** + ***symbols/charctors*** + ***Esc*** to create a line that contains numbers of symbols/charactors
+- Use ***number*** + ***o*** + ***symbols/charctors*** + ***Esc*** to create numbers line that contains numbers of symbols/charactors
+- Use ***shif-r*** to place you to replace mode
+- Use ***r*** + ***symbol/charactor*** to replace the current cursor charactor. Note it just can replace one charactor.
+- Use ***c*** + ***w*** to change/delete a word where is the cursor on that word of the beginning. Then you will into insert mode.
+- Use ***c*** + ***$*** or ***shift-c*** to replace from your current cursor position all the way through the end of the line.
+- Use ***cc*** to replace entire line of text
+- Use ***~*** to change lowercase to uppercase vice versa
+- Use ***g*** + ***~*** + ***w*** to change the case of a word
+- Use ***g*** + ***~*** + ***$*** or ***0*** to change the case from current cursor position to the end of the line or beginning of the line
+- Use ***g*** + ***~~*** to change the case of the entire line no matter the cursor where is it.
+- Use ***g*** + ***u*** or ***shift-u*** + ***w*** to change the case of the word to lowercase or uppercase no matter what case they were before.
+- Use ***g*** + ***uu*** or ***shift-u shift-u*** to change the case of the entire line no matter what case they were before.
+- Use ***shift-j*** to combine two lines on one line. But between the two sentences will have two space.
+- Use ***numbers*** + ***shift-j*** to combine all numbers of lines to join together.
+- Use ***g*** + ***shift-j*** to combine two lines and will not have space between two sentences.
