@@ -68,10 +68,10 @@
 - Use ***shift-a*** to jump to end of the line and place you in insert mode.
 - Use ***o*** to begin a new line below the cursor and place you in insert mode.
 - Use ***shift-o*** to create a line above the current line and start inserting mode
-- Use ***number*** + ***i*** + ***symbols/charctors*** + ***Esc*** to create a line that contains numbers of symbols/charactors
-- Use ***number*** + ***o*** + ***symbols/charctors*** + ***Esc*** to create numbers line that contains numbers of symbols/charactors
+- Use ***number*** + ***i*** + ***symbols/charctors*** + ***Esc*** to create a line that contains numbers of symbols/characters
+- Use ***number*** + ***o*** + ***symbols/charctors*** + ***Esc*** to create numbers line that contains numbers of symbols/characters
 - Use ***shif-r*** to place you to replace mode
-- Use ***r*** + ***symbol/charactor*** to replace the current cursor charactor. Note it just can replace one charactor.
+- Use ***r*** + ***symbol/character*** to replace the current cursor character. Note it just can replace one character.
 - Use ***c*** + ***w*** to change/delete a word where is the cursor on that word of the beginning. Then you will into insert mode.
 - Use ***c*** + ***$*** or ***shift-c*** to replace from your current cursor position all the way through the end of the line.
 - Use ***cc*** to replace entire line of text
@@ -84,3 +84,22 @@
 - Use ***shift-j*** to combine two lines on one line. But between the two sentences will have two space.
 - Use ***numbers*** + ***shift-j*** to combine all numbers of lines to join together.
 - Use ***g*** + ***shift-j*** to combine two lines and will not have space between two sentences.
+
+### 3.2. Search, Find and Replace - Part One
+- Use ***f*** + ***character*** or ***shift-character*** to move your cursor to the next occurrence of the character or captital character on the line.
+- Use ***shift-f*** + ***character*** or ***shift-character*** to move your cursor to the before occurrence of the character or captital character on the line.
+- Use ***;*** to repeat the search go before.
+- Use ***,*** to repeat the search go back.
+- Use ***t*** + ***character*** or ***shift-character*** to move the curcor back a given character. 
+- Use ***shift-t*** + ***character*** or ***shift-character*** to move the curcor before a given character.
+- Use ***d*** + ***t*** + ***character*** or ***d*** + ***f*** + ***character*** to delete it from the current cursor to a given character.
+- Use ***/*** + ***character*** + ***enter*** to search next character entire file. 
+- Use ***n*** to keep searching next one.
+- Use ***shift-n*** to search reverse direction.
+- Use ***:set is*** to turn on incremental search which is can directely find the character without press enter.
+- Use ***:set nois** to turn off
+- Use ***:set is?*** to check the status
+- Use ***:set hls*** to appear seaching is highlight.
+- Use ***:nohls*** to turn off highlight and use ***:set nohls*** to disable it.
+- Move cursor under or nearest the word then ***shift-**** to search the word. You can repeat it or use ***n***, ***shift-n*** to find next one.
+- Use ***shift-#*** to find the word from backward.
