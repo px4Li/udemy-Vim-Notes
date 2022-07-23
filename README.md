@@ -97,9 +97,23 @@
 - Use ***n*** to keep searching next one.
 - Use ***shift-n*** to search reverse direction.
 - Use ***:set is*** to turn on incremental search which is can directely find the character without press enter.
-- Use ***:set nois** to turn off
+- Use ***:set nois*** to turn off
 - Use ***:set is?*** to check the status
 - Use ***:set hls*** to appear seaching is highlight.
 - Use ***:nohls*** to turn off highlight and use ***:set nohls*** to disable it.
-- Move cursor under or nearest the word then ***shift-**** to search the word. You can repeat it or use ***n***, ***shift-n*** to find next one.
+- Move cursor under or nearest the word then ***shift-*** to search the word. You can repeat it or use ***n***, ***shift-n*** to find next one.
 - Use ***shift-#*** to find the word from backward.
+
+### Search, Find and Replace - Part Two
+- Use ***:s/*** + ***old/*** + ***new/*** to replace old to new. 
+- Use ***:s/*** + ***old/*** + ***new/*** + ***g*** to replace all in the line.
+- Use ***:number*** + ***s/*** + ***old/*** + ***new/*** + ***g*** to replace the word in number of lines.
+- Use ***:number,number*** + ***s/*** + ***old/*** + ***new/*** + ***g*** to replace the word from number of line to number of line. 
+- Use ***:%*** + ***s/*** + ***old/*** + ***new/*** + ***g*** to replace the word entire of the file.
+- Use ***:/pattern1/,/pattern2/*** + ***s/*** + ***old/*** + ***new/*** + ***g*** to replace the word from pattern1 to pattern2.
+- Use ***:/pattern1/,$*** + ***s/*** + ***old/*** + ***new/*** + ***g*** to replace the word from patter1 to last line of the file.
+- Use ***:s/*** + ***#old/old1/old2*** + ***#/new/new1/new2#*** to replace the words with slashs.
+- Use ***:set*** + ***nu*** to enable show line numbers. Use ***nonu*** to disable that. Or use ***nu!*** to toggle line numbers. 
+
+
+
