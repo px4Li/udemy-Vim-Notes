@@ -104,7 +104,7 @@
 - Move cursor under or nearest the word then ***shift-*** to search the word. You can repeat it or use ***n***, ***shift-n*** to find next one.
 - Use ***shift-#*** to find the word from backward.
 
-### Search, Find and Replace - Part Two
+### 3.3. Search, Find and Replace - Part Two
 - Use ***:s/*** + ***old/*** + ***new/*** to replace old to new. 
 - Use ***:s/*** + ***old/*** + ***new/*** + ***g*** to replace all in the line.
 - Use ***:number*** + ***s/*** + ***old/*** + ***new/*** + ***g*** to replace the word in number of lines.
@@ -115,5 +115,18 @@
 - Use ***:s/*** + ***#old/old1/old2*** + ***#/new/new1/new2#*** to replace the words with slashs.
 - Use ***:set*** + ***nu*** to enable show line numbers. Use ***nonu*** to disable that. Or use ***nu!*** to toggle line numbers. 
 
-
-
+### 3.4. Text Objects and Macros
+- Use ***d*** + ***a*** + ***w*** to delete a word if your cursor is not at the beginning of the word.
+- Use ***d*** + ***i*** + ***w*** to change inner word if your cursor is not at the beginning of the word.
+- Use ***d*** + ***a*** + ***s*** to delete a sentence if your cursor is not at the beginning of the sentence.
+- Use ***d*** + ***i*** + ***s*** to delete a inner sentence if your cursor is not at the beginning of the sentence. But the space still remains.
+- Use ***d*** + ***a*** + ***p*** to delete a paragraph if your cursor is not at the beginning of the sentence. 
+- Use ***d*** + ***i*** + ***p*** to delete a inner paragraph if your cursor is not at the beginning of the paragraph. But the space still remains.
+- Use ***c*** + ***i*** + ***[*** to delete everything within the brackets.
+- Use ***c*** + ***a*** + ***[*** to delete everything within the brackets include the brackets themselves.
+- Use ***c*** + ***i*** + ***(*** to delete everything within the parentheses.
+- Use ***c*** + ***a*** + ***(*** to delete everything within the parentheses include the parentheses themselves.
+- Use ***y*** + ***i*** + ***<*** to yank the text from inside the brackets.
+- Use ***y*** + ***a*** + ***<*** to yank the text include the entil angle brackets.
+- Use ***c*** + ***i*** + ***t*** to change the entire contents when place your cursor at the line that starts with **<>**. Change to ***d*** for deleting.
+- Use ***c*** + ***a*** + ***t*** to change the entire contents include the angle brackets.
