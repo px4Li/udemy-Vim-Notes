@@ -130,3 +130,11 @@
 - Use ***y*** + ***a*** + ***<*** to yank the text include the entil angle brackets.
 - Use ***c*** + ***i*** + ***t*** to change the entire contents when place your cursor at the line that starts with **<>**. Change to ***d*** for deleting.
 - Use ***c*** + ***a*** + ***t*** to change the entire contents include the angle brackets.
+
+
+## Visual Mode
+### Visual Mode - Part 1
+- Use ***v*** to start characterwise visual mode.
+- Use ***V*** to start linewise visual mode
+- Use ***Ctrl-v*** to start blockwise visual mode.
+- Use ***Shift+i*** in visual block mode to multi edit lines
